@@ -2,9 +2,9 @@ const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
 const app = express();
-
-const moviesRouter = require("./Routes/movies");
 require("dotenv").config();
+const moviesRouter = require("./Routes/movies");
+
 const connectDB = require("./db/connect");
 const port = process.env.PORT;
 console.log(process.env.PORT);
